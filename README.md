@@ -13,5 +13,7 @@ FROM ghcr.io/f0rkz/docker-steamcmd:latest
 Utilize steamcmd in your entrypoint or dockerfiles:
 
 ```
-/opt/steamcmd/steamcmd.sh +login anonymous +force_install_dir /data/avorion +app_update 565060 validate +quit
+steamcmd.sh +login anonymous +force_install_dir /data/avorion +app_update 565060 validate +quit
 ```
+
+Note the `steam` user should be considered when extending this container.
