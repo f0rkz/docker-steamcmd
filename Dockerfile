@@ -11,7 +11,7 @@ RUN apt update -yq && \
 
 ADD --chown=root:root https://steamcdn-a.akamaihd.net/client/installer/steamcmd_linux.tar.gz /tmp
 RUN mkdir /opt/steamcmd
-RUN tar zxfv /opt/steamcmd/steamcmd_linux.tar.gz -C /opt/steamcmd && rm /tmp/steamcmd_linux.tar.gz
+RUN tar zxfv /tmp/steamcmd_linux.tar.gz -C /opt/steamcmd && rm /tmp/steamcmd_linux.tar.gz
 ENV PATH="${PATH}:/opt/steamcmd"
 
 RUN steamcmd.sh +quit
