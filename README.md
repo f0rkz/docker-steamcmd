@@ -15,5 +15,3 @@ Utilize steamcmd in your entrypoint or dockerfiles:
 ```
 steamcmd.sh +login anonymous +force_install_dir /data/avorion +app_update 565060 validate +quit
 ```
-
-Note the `steam` user should be considered when extending this container.
